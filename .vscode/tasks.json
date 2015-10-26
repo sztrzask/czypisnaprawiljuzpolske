@@ -7,7 +7,19 @@
 // ${cwd}: the current working directory of the spawned process
 
 
-{ "version": "1.0", "command": "explorer", "windows": { "command": "explorer.exe" }, "args": ["index.html"] }
+{
+    "version": "0.1.0",
+    "command": "gulp",
+    "isShellCommand": true,
+    "tasks": [
+        {
+            "taskName": "default",
+            "isBuildCommand": true,
+            "showOutput": "always",
+            "isWatching": true
+        }
+    ]
+}
 
 // A task runner that calls the Typescript compiler (tsc) and
 // // Compiles a HelloWorld.ts program
