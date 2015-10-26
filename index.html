@@ -28,17 +28,17 @@
 		</div>
 		<div class="card-container">
 			<div class="mdl-card mdl-shadow--4dp" ng-repeat="lie in lies | filter:query | limitTo: resultLimit">
+				<div class="mdl-card__supporting-text">{{lie.description}}</div>
 				<div class="mdl-card__title">
 					<h2 class="mdl-card__title-text">{{lie.title}}</h2>
 				</div>
-				<div class="mdl-card__supporting-text">{{lie.description}}</div>
 			</div>
 		</div>
 	</main>
 	<footer class="mdl-mini-footer">
 		<div class="mdl-mini-footer__left-section">
 			<div class="mdl-logo">Czy PiS naprawił już Polskę?</div>
-			<small>Obietnice wyborcze zawarte na tej stronie nie są oficjalnym stanowiskiem Prawa i Sprawiedliwości. Autorzy strony nie są związani z żadną partią polityczną, ani stowarzyszeniem. Materiały zamieszczone na stronie pochodzą ze stron MamPrawoWiedziec.pl, pis.org.pl, Onet.pl oraz mediów społecznościowych. Logo Prawa i Sprawiedliwości jest własnością partii. Widzisz błąd? Napisz<a href="mailto:info@czypisnaprawiljuzpolske.pl"> info@czypisnaprawiljuzpolske.pl</a></small>
+			<small>Obietnice wyborcze zawarte na tej stronie nie są oficjalnym stanowiskiem Prawa i Sprawiedliwości. Autorzy strony nie są związani z żadną partią polityczną, ani stowarzyszeniem. Materiały zamieszczone na stronie pochodzą ze stron MamPrawoWiedziec.pl, pis.org.pl, Onet.pl oraz mediów społecznościowych. Logo Prawa i Sprawiedliwości jest własnością partii. Widzisz błąd? Napisz <a href="mailto:info@czypisnaprawiljuzpolske.pl">info@czypisnaprawiljuzpolske.pl</a></small>
 		</div>
 	</footer>
 </body>

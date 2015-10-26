@@ -19,6 +19,18 @@ footer {
 footer .mdl-logo {
   white-space: nowrap;
 }
+.mdl-card__supporting-text {
+  font-size: 1em;
+  padding-top: 2em;
+}
+.mdl-card__title {
+  justify-content: center;
+  color: #FF4136;
+}
+.mdl-card__title h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
 .card-container {
   display: -webkit-flex;
   display: flex;
