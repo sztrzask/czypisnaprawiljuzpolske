@@ -4,6 +4,7 @@ main {
 body {
   display: flex;
   flex-direction: column;
+  background: url(/images/bg.png);
 }
 footer {
   margin-bottom: 0;
@@ -64,7 +65,7 @@ footer .mdl-logo {
   display: inline-block;
 }
 header {
-  background-color: #fff !important;
+  background-color: transparent !important;
 }
 header h2 {
   font-family: 'Roboto', sans-serif;
