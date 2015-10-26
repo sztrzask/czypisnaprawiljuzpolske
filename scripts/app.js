@@ -1,4 +1,5 @@
-angular.module('pisApp', [])
+angular
+.module('pisApp', [])
   .controller('SearchController', function ($scope, $http) {
     var search = this;
     $scope.lies = [];

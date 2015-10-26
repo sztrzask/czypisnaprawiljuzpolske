@@ -71,4 +71,5 @@ header h2 {
 }
 .mdl-layout__header-row {
   height: 120px;
+  margin: auto;
 }
