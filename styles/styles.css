@@ -1,0 +1,35 @@
+main {
+  margin: 1em 3em;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+footer {
+  margin-bottom: 0;
+  margin-top: auto;
+}
+footer * {
+  float: none !important;
+}
+footer > div,
+footer {
+  display: flex !important;
+}
+footer .mdl-logo {
+  white-space: nowrap;
+}
+.card-container {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.card-container > div {
+  margin: 1em;
+}
+.mdl-layout__header {
+  display: flex !important;
+}
