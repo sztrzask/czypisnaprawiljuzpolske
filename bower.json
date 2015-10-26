@@ -1,0 +1,21 @@
+{
+  "name": "PiS",
+  "homepage": "https://github.com/sztrzask/czypisnaprawiljuzpolske",
+  "authors": [
+    "Simon T <sztrzaskowski@gmail.com>"
+  ],
+  "description": "Czy PiS naprawil juz Polske",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#1.1.0"
+  }
+}
