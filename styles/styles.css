@@ -19,7 +19,7 @@ footer {
 footer .mdl-logo {
   white-space: nowrap;
 }
-.mdl-card__supporting-text {
+.mdl-card__supporting-text:first-child {
   font-size: 1em;
   padding-top: 2em;
 }
@@ -44,4 +44,21 @@ footer .mdl-logo {
 }
 .mdl-layout__header {
   display: flex !important;
+}
+.icon-holder {
+  justify-content: flex-end;
+  display: flex;
+  padding-top: 0;
+}
+.icon.yep::before {
+  background: url(/images/yeah_transparent.png);
+}
+.icon.nope::before {
+  background: url(/images/nope_transparent.png);
+}
+.icon::before {
+  content: '';
+  width: 60px;
+  height: 60px;
+  display: inline-block;
 }
