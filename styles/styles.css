@@ -4,6 +4,9 @@ main {
 body {
   display: flex;
   flex-direction: column;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   background: url(/images/bg.png);
 }
 footer {
