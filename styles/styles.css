@@ -41,6 +41,7 @@ footer .mdl-logo {
 }
 .card-container > div {
   margin: 1em;
+  height: 15em;
 }
 .mdl-layout__header {
   display: flex !important;
@@ -78,4 +79,8 @@ header svg {
 .mdl-layout__header-row {
   height: 120px;
   margin: auto;
+}
+.search-container input,
+.search-container label {
+  font-size: 1.5em;
 }
