@@ -68,6 +68,12 @@ header {
 header h2 {
   font-family: 'Roboto', sans-serif;
   color: #111 !important;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+header svg {
+  padding: 0 20px;
 }
 .mdl-layout__header-row {
   height: 120px;
