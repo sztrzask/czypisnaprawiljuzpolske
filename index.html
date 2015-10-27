@@ -26,12 +26,13 @@
 			</span>
 			<div class="mdl-layout-spacer"></div>
 		</div>
-	</header>
-	<main class="mdl-layout__content">
-		<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label search-container">
+			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label search-container">
 			<input class="mdl-textfield__input" type="text" id="sample3" ng-model="query" />
 			<label class="mdl-textfield__label" for="sample3">szukaj</label>
 		</div>
+	</header>
+	<main class="mdl-layout__content">
+		
 		<div class="card-container" >
 			<div class="mdl-card mdl-shadow--4dp" ng-repeat="lie in lies | filter:query | limitTo: resultLimit">
 				<div class="mdl-card__supporting-text">{{lie.description}}</div>

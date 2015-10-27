@@ -49,6 +49,8 @@ footer .mdl-logo {
 }
 .mdl-layout__header {
   display: flex !important;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .icon-holder {
   justify-content: flex-end;
@@ -68,7 +70,7 @@ footer .mdl-logo {
   display: inline-block;
 }
 header {
-  background-color: transparent !important;
+  background-color: #fff !important;
 }
 header h2 {
   font-family: 'Roboto', sans-serif;
@@ -82,7 +84,10 @@ header svg {
 }
 .mdl-layout__header-row {
   height: 120px;
-  margin: auto;
+}
+.search-container {
+  align-self: flex-end;
+  margin: 0 40px;
 }
 .search-container input,
 .search-container label {
