@@ -94,6 +94,9 @@ header svg {
 .search-container label {
   font-size: 1.5em;
 }
+.search-container input {
+  color: #111;
+}
 .right-header-side {
   display: flex;
   flex-direction: column;
@@ -106,4 +109,22 @@ header svg {
 }
 .page-title {
   text-align: center;
+}
+.overview-card {
+  display: flex;
+}
+.overview-card > div {
+  margin: 1em auto;
+  min-width: 33%;
+  max-width: 450px;
+}
+.slider span {
+  width: 50%;
+  display: inline-block;
+}
+.slider span:last-of-type {
+  text-align: right;
+}
+.slider .mdl-progress {
+  width: auto;
 }

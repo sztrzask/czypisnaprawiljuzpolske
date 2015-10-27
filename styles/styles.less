@@ -142,6 +142,11 @@ header
 	{
 		font-size:1.5em;
 	}
+	
+	input
+	{
+		color:#111;
+	}
 }
 
 .right-header-side
@@ -161,4 +166,32 @@ header
 .page-title
 {
 	text-align:center;
+}
+
+.overview-card 
+{
+	display:flex;
+	
+	& > div{
+	margin: 1em auto;
+    min-width: 33%;
+    max-width: 450px;
+	}
+}
+.slider
+{
+	span
+	{
+		width:50%;
+		display:inline-block;
+		&:last-of-type
+		{
+			text-align:right;
+		}
+	}	
+	& .mdl-progress
+	{
+		width:auto;
+	}
+	
 }
