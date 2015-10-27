@@ -53,7 +53,7 @@
 		</div>
 	</header>
 	<main class="mdl-layout__content">
-		<h1 class="page-title">Oto co Prawo i Sprawidliwość obiecało swoim wyborcom:</h1>
+		<h3 class="page-title">Oto co Prawo i Sprawiedliwość obiecało swoim wyborcom:</h3>
 		<div class="card-container">
 			<div class="mdl-card mdl-shadow--4dp" ng-repeat="lie in lies | filter:query | limitTo: resultLimit">
 				<div class="mdl-card__supporting-text">{{lie.description}}</div>
@@ -63,6 +63,17 @@
 				<div class="mdl-card__supporting-text icon-holder"><i class="icon" ng-class="{'yep': lie.yep == true, 'nope': lie.yep != true}"></i></div>
 			</div>
 		</div>
+		<div class="mdl-card mdl-shadow--4dp">
+				<div class="mdl-card__title">
+					<h2 class="mdl-card__title-text">Wniosek?</h2>
+				</div>
+				<div class="slider">
+					<span>Po staremu</span>
+				<input class="mdl-slider mdl-js-slider" type="range"
+ 					 min="0" max="0" value="0" tabindex="0"/>
+					  <span>Dobrobyt</span>
+					  </div>
+			</div>
 	</main>
 	<footer class="mdl-mini-footer">
 		<div class="mdl-mini-footer__left-section">

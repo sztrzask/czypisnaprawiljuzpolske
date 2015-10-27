@@ -23,18 +23,6 @@ footer {
 footer .mdl-logo {
   white-space: nowrap;
 }
-.mdl-card__supporting-text:first-child {
-  font-size: 1em;
-  padding-top: 2em;
-}
-.mdl-card__title {
-  justify-content: center;
-  color: #FF4136;
-}
-.mdl-card__title h2 {
-  font-size: 30px;
-  font-weight: bold;
-}
 .card-container {
   display: -webkit-flex;
   display: flex;
@@ -46,6 +34,18 @@ footer .mdl-logo {
 .card-container > div {
   margin: 1em;
   height: 15em;
+}
+.card-container .mdl-card__supporting-text:first-child {
+  font-size: 1em;
+  padding-top: 2em;
+}
+.card-container .mdl-card__title {
+  justify-content: center;
+  color: #FF4136;
+}
+.card-container .mdl-card__title h2 {
+  font-size: 30px;
+  font-weight: bold;
 }
 .mdl-layout__header {
   display: flex !important;
@@ -99,6 +99,9 @@ header svg {
   justify-content: flex-end;
 }
 .search-container,
-.right-header-side {
+.social-media {
   margin: 0 3em;
+}
+.page-title {
+  text-align: center;
 }
