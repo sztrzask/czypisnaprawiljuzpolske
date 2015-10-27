@@ -12,23 +12,25 @@
 	<script src="scripts/material.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
 	<script src="scripts/app.js"></script>
-	
-	<meta property="og:url"           content="http://czypisnaprawiljuzpolske.pl/" />
-    <meta property="og:type"          content="website" />
-    <meta property="og:title"         content="Czy PiS naprawił już Polskę?" />
-    <meta property="og:description"   content="Strona informująca, czy PiS naprawił już Polskę" />
-    <meta property="og:image"         content="http://www.your-domain.com/images/og_fb.png" />
+
+	<meta property="og:url" content="http://czypisnaprawiljuzpolske.pl/" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Czy PiS naprawił już Polskę?" />
+	<meta property="og:description" content="Strona informująca, czy PiS naprawił już Polskę" />
+	<meta property="og:image" content="http://www.your-domain.com/images/og_fb.png" />
 </head>
+
 <body ng-controller="SearchController as search">
 	<div id="fb-root"></div>
-	<script>(function(d, s, id) {
+	<script>
+		(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
   js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
   fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
+}(document, 'script', 'facebook-jssdk'));
+	</script>
 	<header class="mdl-layout__header is-casting-shadow">
 		<div class="mdl-layout__header-row">
 			<!-- Title -->
@@ -40,15 +42,19 @@
 			</span>
 			<div class="mdl-layout-spacer"></div>
 		</div>
-			<div class="social-media><div class="fb-share-button" data-href="http://czypisnaprawiljuzpolske.pl/" data-layout="button_count"></div></div>
+		<div class="right-header-side">
+			<div class="social-media">
+				<div class="fb-share-button" data-href="http://czypisnaprawiljuzpolske.pl/" data-layout="button_count"></div>
+			</div>
 			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label search-container">
-			<input class="mdl-textfield__input" type="text" id="sample3" ng-model="query" />
-			<label class="mdl-textfield__label" for="sample3">szukaj</label>
+				<input class="mdl-textfield__input" type="text" id="sample3" ng-model="query" />
+				<label class="mdl-textfield__label" for="sample3">szukaj</label>
+			</div>
 		</div>
 	</header>
 	<main class="mdl-layout__content">
 		<h1 class="page-title">Oto co Prawo i Sprawidliwość obiecało swoim wyborcom:</h1>
-		<div class="card-container" >
+		<div class="card-container">
 			<div class="mdl-card mdl-shadow--4dp" ng-repeat="lie in lies | filter:query | limitTo: resultLimit">
 				<div class="mdl-card__supporting-text">{{lie.description}}</div>
 				<div class="mdl-card__title">
@@ -65,4 +71,5 @@
 		</div>
 	</footer>
 </body>
+
 </html>
