@@ -8,7 +8,7 @@
 	<meta property="og:title" content="Czy PiS naprawił już Polskę?" />
 	<meta property="og:description" content="Strona informująca, czy PiS naprawił już Polskę" />
 	<meta property="og:image" content="http://czypisnaprawiljuzpolske.pl/images/og_fb.png" />
-	
+
 	<title>Czy PiS naprawił już Polskę?</title>
 	<meta name="description" content="Strona informująca, czy PiS naprawił już Polskę.">
 
@@ -30,14 +30,16 @@
 
 <body ng-controller="SearchController as search">
 	<div id="fb-root"></div>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
+	<div id="fb-root"></div>
+	<script>
+		(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
   js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=553163151502328";
   fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+}(document, 'script', 'facebook-jssdk'));
+	</script>
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -46,9 +48,8 @@
 
  ga('create', 'UA-69325240-1', 'auto');
  ga('send', 'pageview');
-
 	</script>
-   
+
 	<header class="mdl-layout__header is-casting-shadow">
 		<div class="mdl-layout__header-row">
 			<!-- Title -->
@@ -88,41 +89,42 @@
 		</div>
 		<h3 class="page-title">A tyle obetnic spełnili:</h3>
 		<div class="overview-card">
-		<div class="mdl-card mdl-shadow--4dp">
-			<div class="mdl-card__title">
-				<h2 class="mdl-card__title-text">Wniosek?</h2>
-			</div>
-			<div class="mdl-card__supporting-text">
-				<div class="slider">
-					<span>Po staremu</span><span>Dobrobyt</span>
-					<div id="p1" class="mdl-progress mdl-js-progress"></div>
-					<script>
-						document.querySelector('#p1').addEventListener('mdl-componentupgraded', function() {
-						this.MaterialProgress.setProgress(1);
+			<div class="mdl-card mdl-shadow--4dp">
+				<div class="mdl-card__title">
+					<h2 class="mdl-card__title-text">Wniosek?</h2>
+				</div>
+				<div class="mdl-card__supporting-text">
+					<div class="slider">
+						<span>W ruinie</span><span>Dobrobyt</span>
+						<div id="p1" class="mdl-progress mdl-js-progress"></div>
+						<script>
+							document.querySelector('#p1').addEventListener('mdl-componentupgraded', function() {
+						this.MaterialProgress.setProgress(0);
 					});
-					</script>
+						</script>
+					</div>
+				</div>
+			</div>
+			<div class="mdl-card mdl-shadow--4dp ">
+				<div class="mdl-card__title">
+					<h2 class="mdl-card__title-text">Spełnione obietnice</h2>
+				</div>
+				<div class="mdl-card__supporting-text">
+					<div class="slider">
+						<span>Żadna</span><span>Wszystkie</span>
+						<div id="p1" class="mdl-progress mdl-js-progress"></div>
+						<script>
+							document.querySelector('#p1').addEventListener('mdl-componentupgraded', function() {
+						this.MaterialProgress.setProgress(0);
+					});
+						</script>
+					</div>
+				</div>
+				<div class="mdl-card__actions mdl-card--border">
+					Zmiany można policzyć na palcach jednej głowy.
 				</div>
 			</div>
 		</div>
-			<div class="mdl-card mdl-shadow--4dp ">
-			<div class="mdl-card__title">
-				<h2 class="mdl-card__title-text">Spełnione obietnice</h2>
-			</div>
-			<div class="mdl-card__supporting-text">
-				<div class="slider">
-					<span>Żadna</span><span>Wszystkie</span>
-					<div id="p1" class="mdl-progress mdl-js-progress"></div>
-					<script>
-						document.querySelector('#p1').addEventListener('mdl-componentupgraded', function() {
-						this.MaterialProgress.setProgress(1);
-					});
-					</script>
-				</div>
-			</div>
-			<div class="mdl-card__actions mdl-card--border">
-				Zmiany można policzyć na palcach jednej głowy.
-			</div>
-		</div></div>
 	</main>
 	<footer class="mdl-mini-footer">
 		<div class="mdl-mini-footer__left-section">

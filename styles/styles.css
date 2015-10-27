@@ -2,7 +2,11 @@ main {
   margin: 1em 3em;
 }
 body {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
   background: #d5f1fb  ;
 }
@@ -15,6 +19,8 @@ footer * {
 }
 footer > div,
 footer {
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
   display: flex !important;
 }
 footer .mdl-logo {
@@ -22,10 +28,19 @@ footer .mdl-logo {
 }
 .card-container {
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
 }
 .card-container > div {
@@ -37,6 +52,8 @@ footer .mdl-logo {
   padding-top: 2em;
 }
 .card-container .mdl-card__title {
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   color: #FF4136;
 }
@@ -45,12 +62,22 @@ footer .mdl-logo {
   font-weight: bold;
 }
 .mdl-layout__header {
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
   display: flex !important;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 .icon-holder {
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   padding-top: 0;
   margin-bottom: 0;
@@ -70,21 +97,36 @@ footer .mdl-logo {
 }
 header {
   background-color: #fff !important;
+  padding: 0 !important;
 }
 header h2 {
   font-family: 'Roboto', sans-serif;
   color: #111 !important;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-align-items: baseline;
+  -ms-flex-align: baseline;
   align-items: baseline;
+  margin: 0;
+  white-space: nowrap;
 }
 header svg {
   padding: 0 20px;
+}
+header > div {
+  margin: 0 8em !important;
+  padding: 0 !important;
 }
 .mdl-layout__header-row {
   height: 120px;
 }
 .search-container {
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
   align-self: flex-end;
 }
 .search-container input,
@@ -95,19 +137,25 @@ header svg {
   color: #111;
 }
 .right-header-side {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
   align-items: flex-start;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
-}
-.search-container,
-.social-media {
-  margin: 0 3em;
 }
 .page-title {
   text-align: center;
 }
 .overview-card {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
 }
 .overview-card > div {
@@ -124,4 +172,37 @@ header svg {
 }
 .slider .mdl-progress {
   width: auto;
+}
+@media all and (max-width: 1280px) {
+  header > div {
+    margin: 0 3em !important;
+  }
+}
+@media all and (max-width: 1200px) {
+  header h2 {
+    font-size: 30px;
+  }
+}
+@media all and (max-width: 1000px) {
+  header {
+    -webkit-flex-direction: column !important;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+    -webkit-justify-content: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+    -webkit-align-items: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+  }
+  header .mdl-layout__header-row {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .overview-card {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
 }

@@ -68,7 +68,7 @@ footer
 .mdl-layout__header
 {
 	display:flex !important;
-	    flex-direction: row;
+	flex-direction: row;
     justify-content: space-between;
 }
 
@@ -111,17 +111,28 @@ footer
 header
 {
 	background-color: #fff !important;
+	padding:0 !important;
+
+	
 	h2 
 	{
 		font-family: 'Roboto', sans-serif;
 		color:#111 !important;
-		    display: flex;
+		display: flex;
 		flex-direction: row;
 		align-items: baseline;
+		margin:0;
+		white-space: nowrap;
 	}
 	svg
 	{
 		padding:0 20px
+	}
+	
+	& > div
+	{
+		margin:0 8em !important;
+		padding:0 !important;
 	}
 }
 
@@ -150,12 +161,6 @@ header
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-end;
-}
-
-.search-container,
-.social-media
-{
-	margin:0 3em;
 }
 
 .page-title
@@ -189,4 +194,48 @@ header
 		width:auto;
 	}
 	
+}
+
+@media all and (max-width: 1280px)
+{
+	header
+	{
+		& > div
+		{
+			margin:0 3em !important;
+		}
+	}
+}
+
+
+@media all and (max-width: 1200px)
+{
+	header
+	{
+		h2
+		{
+			font-size:30px;
+		}
+	}
+}
+
+@media all and (max-width: 1000px) 
+{
+	header
+	{
+		flex-direction: column !important;
+		justify-content: center !important;
+		align-items: center !important;
+		
+		
+		.mdl-layout__header-row
+		{
+			flex-direction: column;
+		}
+	}
+	
+	.overview-card
+	{
+		flex-direction: column;
+	}
 }

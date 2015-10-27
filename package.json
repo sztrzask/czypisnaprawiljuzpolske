@@ -1,5 +1,5 @@
 {
-  "name": "PiS",
+  "name": "pis",
   "version": "1.0.0",
   "main": "gulpfile.js",
   "scripts": {
@@ -16,5 +16,8 @@
     "url": "https://github.com/sztrzask/czypisnaprawiljuzpolske/issues"
   },
   "homepage": "https://github.com/sztrzask/czypisnaprawiljuzpolske#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "gulp-autoprefixer": "^3.1.0"
+  }
 }
