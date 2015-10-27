@@ -17,7 +17,7 @@
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="Czy PiS naprawił już Polskę?" />
 	<meta property="og:description" content="Strona informująca, czy PiS naprawił już Polskę" />
-	<meta property="og:image" content="http://www.your-domain.com/images/og_fb.png" />
+	<meta property="og:image" content="http://czypisnaprawiljuzpolske.pl/images/og_fb.png" />
 </head>
 
 <body ng-controller="SearchController as search">
@@ -68,9 +68,9 @@
 		</div>
 	</header>
 	<main class="mdl-layout__content">
-		<h3 class="page-title">Oto co Prawo i Sprawiedliwość obiecało swoim wyborcom:</h3>
+		<h3 class="page-title" ng-show="data.length">Oto co Prawo i Sprawiedliwość obiecało swoim wyborcom:</h3>
 		<div class="card-container">
-			<div class="mdl-card mdl-shadow--4dp" ng-repeat="lie in lies | filter:query | limitTo: resultLimit">
+			<div class="mdl-card mdl-shadow--4dp" ng-repeat="lie in data = (lies | filter:query | limitTo: resultLimit)">
 				<div class="mdl-card__supporting-text">{{lie.description}}</div>
 				<div class="mdl-card__title">
 					<h2 class="mdl-card__title-text">{{lie.title}}</h2>
@@ -78,6 +78,7 @@
 				<div class="mdl-card__supporting-text icon-holder"><i class="icon" ng-class="{'yep': lie.yep == true, 'nope': lie.yep != true}"></i></div>
 			</div>
 		</div>
+		<h3 class="page-title">A tyle obetnic spełnili:</h3>
 		<div class="overview-card">
 		<div class="mdl-card mdl-shadow--4dp">
 			<div class="mdl-card__title">
