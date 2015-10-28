@@ -1,11 +1,16 @@
-angular
-.module('pisApp', [])
-  .controller('SearchController', function ($scope, $http) {
-    var search = this;
-    $scope.lies = [];
-    $http.get('data/data.html').success(function (data) {
-      $scope.lies = data;
-    });
-    $scope.query;
-    $scope.resultLimit = 100;
-  });
+(function () {
+  angular
+    .module('pisApp', ['ngMaterial'])
+    .controller('SearchController', SearchController);
+    
+    function SearchController($scope, $http) 
+    {
+      var self = this;
+      self.lies = [];
+      $http.get('data/data.html').success(function (data) {
+        self.lies = data;
+      });
+      self.query;
+      self.resultLimit = 100;
+    }
+})();

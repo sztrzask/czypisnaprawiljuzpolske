@@ -1,0 +1,66 @@
+.icon-holder {
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 0;
+  margin-bottom: 0;
+  margin-top: auto;
+}
+.icon.yep::before {
+  background: url(/images/yeah_transparent.png);
+}
+.icon.nope::before {
+  background: url(/images/nope_transparent.png);
+}
+.icon::before {
+  content: '';
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+}
+.slider span {
+  width: 50%;
+  display: inline-block;
+}
+.slider span:last-of-type {
+  text-align: right;
+}
+.slider .mdl-progress {
+  width: auto;
+}
+@media all and (max-width: 1280px) {
+  header > div {
+    margin: 0 3em !important;
+  }
+}
+@media all and (max-width: 1200px) {
+  header h2 {
+    font-size: 30px;
+  }
+}
+@media all and (max-width: 1000px) {
+  header {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  header .left-header-side {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .overview-card {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
